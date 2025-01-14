@@ -62,7 +62,7 @@ body {
         text-decoration: none;
         transition: 1s;
     }
-    
+
     nav ul a li {
         color: white;
         font-size: 32px;
@@ -174,23 +174,24 @@ body {
 
 
     /* ********************* */
-    
-    .recomendaciones{
+
+    .recomendaciones {
         width: 89%;
         margin: 7%;
         background-color: aliceblue;
     }
-    
-    .recomendaciones .provincia{
+
+    .recomendaciones .provincia {
         align-items: center;
         display: flex;
 
     }
 
-    .recomendaciones .provincia .texto{
+    .recomendaciones .provincia .texto {
         width: 100%;
         font-family: Poppin;
     }
+
     /* ********************* */
 
 
@@ -237,5 +238,106 @@ body {
         width: 50px;
         border-radius: 100%;
     }
-}
 
+
+    /* turismo */
+    main {
+        display: flex;
+        background-color: rgb(128, 128, 128, .5);
+    }
+
+    .places {
+        color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .places .tarjeta_ {
+        border: solid 1px;
+        text-align: center;
+        transition: 2s;
+    }
+
+    .mapa path:hover+.tarjeta_ {
+        display: block;
+        background-color: red;
+    }
+
+
+    /* *********Mapa interactivo*********** */
+    .mapa {
+        display: flex;
+        place-content: center center;
+
+    }
+
+    .mapa path {
+        fill: #f89453;
+        stroke: #888455;
+        stroke-width: 2px;
+    }
+
+    .mapa :hover {
+        fill: #786;
+    }
+
+    /* contacto */
+
+    main .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 550px;
+
+    }
+
+    .contacto h2 {
+        margin: 20px;
+        color: black;
+        font-size: 50px;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 1);
+    }
+
+
+    .formulario {
+        margin: 50px;
+        background-color: grey;
+        width: 80%;
+        align-content: center;
+        font-size: 25px;
+        color: black;
+        border: solid;
+        text-align: left;
+
+    }
+
+    .formulario form {
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario form label,
+    input {
+        margin: 5px;
+    }
+
+    .formulario form {
+        align-items: center;
+        margin: 5px;
+        width: 100%;
+    }
+
+    .formulario form input {
+        border: 1px solid;
+    }
+
+    button {
+        margin: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        font-family: "Poppins", serif;
+        background-color: antiquewhite;
+    }
+}

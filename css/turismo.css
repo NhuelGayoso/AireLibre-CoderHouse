@@ -1,0 +1,42 @@
+main{
+    display: flex;
+    background-color: rgb(128, 128, 128,.5);
+}
+
+.places{
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.places .tarjeta_{
+    border: solid 1px;
+    text-align: center;
+    transition: 2s;
+    opacity: 0;
+}
+
+.mapa path:hover + .tarjeta_{
+    display: block;
+    background-color: red;
+}
+
+
+/* *********Mapa interactivo*********** */
+.mapa {
+    display: flex;
+    place-content: center center;
+    
+}
+
+.mapa path {
+    fill: #f89453;
+    stroke: #888455;
+    stroke-width: 2px;
+}
+
+.mapa :hover {
+    fill: #786;
+}
+

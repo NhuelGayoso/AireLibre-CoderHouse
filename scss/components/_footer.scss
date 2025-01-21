@@ -1,0 +1,43 @@
+footer {
+    background-color: rgb(71, 77, 75, .9);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", serif;
+    color: black;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a img {
+    width: 30px;
+    text-align: center;
+    background-color: white;
+
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.redes li {
+    list-style: none;
+}
+
+.redes li a {
+    text-decoration: none;
+}
+
+.redes li a img {
+    width: 50px;
+    border-radius: 100%;
+}

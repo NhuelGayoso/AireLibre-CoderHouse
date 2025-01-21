@@ -1,0 +1,115 @@
+.main_grid {
+    display: grid;
+    border: solid 1px black;
+    background-color: rgb(197, 192, 197, .5);
+    height: 100%;
+}
+
+main .hero {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+}
+
+.hero .texto {
+    align-content: center;
+}
+
+.hero .texto p {
+    text-align: center;
+    justify-content: center;
+}
+
+#carouselExampleFade {
+    transition-timing-function: in;
+}
+
+#carouselExampleFade img {
+    width: 1000px;
+    height: 700px;
+    object-fit: cover;
+}
+
+
+
+
+/* ********************* */
+
+.seccion_tarjeta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 10px;
+    position: relative;
+}
+
+.seccion_tarjeta .tarjeta {
+    border: solid 1px;
+    position: relative;
+    transition: 1s;
+}
+
+.seccion_tarjeta .tarjeta .texto_tarj {
+    width: 31%;
+    position: absolute;
+    color: black;
+    text-align: center;
+    top: 30%;
+    right: 210px;
+    opacity: 0;
+    transition: 1s;
+}
+
+
+
+.seccion_tarjeta .tarjeta a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold
+}
+
+.seccion_tarjeta .tarjeta img {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* ********************** */
+.seccion_tarjeta .tarjeta:hover {
+    box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
+    border-color: #ffffff;
+}
+
+.seccion_tarjeta .tarjeta:hover img {
+    opacity: .5;
+}
+
+.seccion_tarjeta .tarjeta:hover .texto_tarj {
+    font-size: 20px;
+    opacity: 1;
+    color: black;
+}
+
+
+
+
+/* ********************* */
+
+.recomendaciones {
+    width: 89%;
+    margin: 7%;
+    background-color: aliceblue;
+}
+
+.recomendaciones .provincia {
+    align-items: center;
+    display: flex;
+
+}
+
+.recomendaciones .provincia .texto {
+    width: 100%;
+    font-family: Poppin;
+}
